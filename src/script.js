@@ -4,7 +4,6 @@ const incomeBtn = document.getElementById("incomeBtn")
 const expenseBtn = document.getElementById("expenseBtn")
 const incomeList = document.getElementById("incomeList")
 const expenseList = document.getElementById("expenseList")
-const transactionList = document.getElementById("transactionList")
 const balance = document.getElementById("balance")
 
 const expenses = []
@@ -31,7 +30,6 @@ expenseBtn.addEventListener("click", () => {
 function updateLists() {
     incomeList.replaceChildren("")
     expenseList.replaceChildren("")
-    transactionList.replaceChildren("")
 
     for (let i of expenses) {
         let item = document.createElement("li")
